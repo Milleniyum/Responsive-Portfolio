@@ -1,0 +1,252 @@
+* {
+    box-sizing: border-box;
+    font-size: 18px;
+    font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
+    color: #777777;
+}
+
+body {
+    background-image: url("../images/retina_wood.png");
+    margin: 0;
+}
+
+/* Header */
+
+#main_header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 80px;
+    border-bottom: 2px solid #cccccc;
+    background: #ffffff;
+    z-index: 1;
+}
+
+#header_container {
+    position: relative;
+    height: 80px;
+    width:  960px;
+    margin: 0 auto;
+}
+
+#name {
+    position: absolute;
+    float: left;
+    bottom: 2px;
+    padding: 0 30px;
+    line-height: 80px;
+    background: #4aaaa5;
+}
+
+#name a {
+    font-size: 28px;
+    font-weight: bold;
+    font-family: Georgia, Times, 'Times New Roman', serif;
+    color: #ffffff;
+    text-decoration: none;
+}
+
+#menu {
+    float: right;
+    line-height: 80px;
+}
+
+#menu a {
+    font-size: 18px;
+    color: #777777;
+    text-decoration: none;
+}
+
+#menu a:hover {
+    color: #5daa51;
+}
+
+/* Global h1 */
+
+h1 {
+    padding-bottom: 30px;
+    margin-top: 0;
+    margin-bottom: 30px;
+    color: #4aaaa5;
+    font-size: 28px;
+    font-weight: bold;
+    font-family: Georgia, Times, 'Times New Roman', serif;
+    border-bottom: 3px solid #4aaaa5;
+}
+
+/* About Container */
+
+#about_content {
+    overflow: auto;
+    width: 960px;
+    height: 940px;
+    margin: 100px auto 100px auto;
+    padding: 30px;
+    border: 2px solid #dddddd;
+    background: #ffffff;
+}
+
+#about_content img {
+    float: left;
+    margin: 8px 20px 20px 0;
+    height: 260px;
+    width: 260px;
+    border: 2px solid #4aaaa5;
+}
+
+p {
+    margin-bottom: 20px;
+    line-height: 30px;
+}
+
+#content_cont {
+    clear: both;
+}
+
+/* Contact Container */
+
+#contact_content {
+    overflow: auto;
+    width: 960px;
+    height: 600px;
+    margin: 100px auto 100px auto;
+    padding: 30px;
+    border: px solid #dddddd;
+    background: #ffffff;
+}
+
+input {
+    width: 100%;
+    margin-bottom: 20px;
+    border: 1px solid #4aaaa5;
+}
+
+textarea {
+    width: 100%;
+    height: 200px;
+    margin-bottom: 20px;
+    border: 1px solid #4aaaa5;
+}
+
+button {
+    width: 130px;
+    height: 50px;
+    background: #4aaaa5;
+    color: #ffffff;
+}
+
+/* Portfolio Container */
+
+#portfolio_content {
+    position: relative;
+    overflow: auto;
+    width: 960px;
+    height: 650;
+    margin: 100px auto 100px auto;
+    padding: 30px;
+    border: 2px solid #dddddd;
+    background: #ffffff;
+}
+
+.project {
+    position: relative;
+    float: left;
+    width: 250px;
+    margin: 10px 20px 20px 0;
+}
+
+.project h3 {
+    position: absolute;
+    bottom: 15px;
+    width: 100%;
+    padding: 15px;
+    margin-bottom: 0;
+    font-weight: 300;
+    line-height: 30px;
+    color: #fff;
+    text-align: center;
+    background: #4aaaa5;
+    border-bottom: 0;
+}
+
+.project h3:hover {
+    color: black;
+    cursor: pointer;
+}
+
+/* Footer */
+
+footer {
+    position: fixed;
+    width: 100%;
+    height: 80px;
+    bottom: 0;
+    border-top: 8px solid #4aaaa5;
+    background: #666666;
+}
+
+footer div {
+    position: absolute;
+    width: 100%;
+    bottom: 10px;
+    text-align: center;
+    color: #4aaaa5;
+}
+
+@media screen and (max-width: 980px) {
+    #header_container {
+        width: 100%;
+    }
+    #name {
+        margin-left: 40px;
+    }
+    #menu {
+        margin-right: 40px;
+    }
+    #about_content, #portfolio_content, #contact_content {
+        width: 640px;
+        margin-left: 40px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    #header_container {
+        width: 730px;
+    }
+    #name {
+        margin-left: 0;
+    }
+    #menu {
+        margin-right: 0;
+    }
+    #about_content, #portfolio_content, #contact_content {
+        width: 730px;
+        margin-left: auto;
+    }
+}
+
+@media screen and (max-width: 640px) {
+    #main_header {
+        position: static;
+        height: 160px;
+    }
+    #header_container {
+        position: static;
+        width: 100%;
+    }
+    #name {
+        position: static;
+        float: none;
+        width: 100%;
+        text-align: center;
+    }
+    #menu {
+        float: none;
+        width: 100%;
+        text-align: center;
+    }
+    #about_content, #portfolio_content, #contact_content {
+        width: 610px;
+        margin: 10px auto 10px auto;
+    }
+}
